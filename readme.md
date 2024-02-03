@@ -17,7 +17,7 @@
 
 <p align="center">
 
-<img src="./readme/baner.png?raw=true" width="100%" alt="baner.png">
+<img src="readme/baner.png" width="100%" alt="baner.png">
 
 
 </p>
