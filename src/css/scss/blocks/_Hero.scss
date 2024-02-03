@@ -1,0 +1,15 @@
+@import "../mods/Variables";
+
+
+
+.hero {
+    
+    position: relative;
+    z-index: 3;
+  
+    
+
+    @import './components/Hello';
+
+    @import './Skills';
+}

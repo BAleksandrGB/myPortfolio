@@ -1,0 +1,33 @@
+@import "../mods/Variables";
+
+.about {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    .content {
+        border: 10px solid #000;
+        padding: 60px;
+        background: #00000095;
+        backdrop-filter: blur(10px);
+        max-width: 600px;
+        overflow-y: scroll;
+        font-size: 20px;
+        scrollbar-width: 5px;
+        scroll-behavior: smooth;
+        scrollbar-track-color: #3b3a3a95;
+        scrollbar-color: #000;
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #000; /* цвет дорожки */
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(74, 74, 75); /* цвет плашки */
+            border-radius: 20px; /* закругления плашки */
+            border: 3px solid rgb(50, 50, 50); /* padding вокруг плашки */
+        }
+    }
+}

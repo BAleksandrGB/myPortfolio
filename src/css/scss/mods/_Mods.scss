@@ -1,0 +1,154 @@
+@import "./Variables";
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: normal;
+}
+a:hover {
+    color: inherit;
+}
+
+// font family
+.ff1 {
+    font-family: $f1, serif;
+}
+.ff2 {
+    font-family: $f2, serif;
+}
+.ff3 {
+    font-family: $f3, serif;
+}
+
+// text color
+.ui-text-color {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff07;
+}
+.ui-text-color-dark {
+    color: $ui--text-color;
+}
+.ui-text-color-hover {
+    transition: all 0.4s ease-in-out;
+    :hover {
+        background-image: linear-gradient(to top, #2ef107 0%, #fffb00 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.ui-text-color-alt {
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// Shadows
+.ui-shadow-md {
+    /* medium */
+    box-shadow:
+        0px 4px 6px -2px rgba(0, 0, 0, 0.03),
+        0px 12px 16px -4px rgba(0, 0, 0, 0.08);
+}
+.ui-shadow-lg {
+    /* large */
+    box-shadow:
+        0px 8px 8px -4px rgba(0, 0, 0, 0.03),
+        0px 20px 24px -4px rgba(0, 0, 0, 0.08);
+}
+.ui-shadow-xlg {
+    /* xlarge */
+    box-shadow: 0px 24px 48px -12px rgba(0, 0, 0, 0.18);
+}
+.ui-shadow-xxlg {
+    /* xxlarge */
+    box-shadow: 0px 32px 64px -12px rgba(0, 0, 0, 0.14);
+}
+
+// border
+.UI-border {
+    background:
+        linear-gradient(to right, rgb(245, 245, 255) 4px, transparent 4px) 0 0,
+        linear-gradient(to right, rgb(245, 245, 255) 4px, transparent 4px) 0 100%,
+        linear-gradient(to left, rgb(245, 245, 255) 4px, transparent 4px) 100% 0,
+        linear-gradient(to left, rgb(245, 245, 255) 4px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, rgb(245, 245, 255) 4px, transparent 4px) 0 0,
+        linear-gradient(to bottom, rgb(245, 245, 255) 4px, transparent 4px) 100% 0,
+        linear-gradient(to top, rgb(245, 245, 255) 4px, transparent 4px) 0 100%,
+        linear-gradient(to top, rgb(245, 245, 255) 4px, transparent 4px) 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+// js mods
+// body .main .hero .blockHidden {
+//     animation: blockHidden 1s ease-in-out forwards;
+// }
+.screen {
+    position: absolute;
+    top: -50vw;
+    left: -25vw;
+    width: 150vw;
+    height: 150vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+    .radial {
+        display: none;
+        width: 50%;
+        height: 50%;
+        box-shadow: inset 0 0 50px 00px #000;
+        border-radius: 50%;
+        // transition: all 1s ease-in-out forwards;
+    }
+    .animation-radial {
+        display: block;
+        width: 100%;
+        height: 100%;
+        animation: animScreen 1s ease-in forwards;
+
+    }
+    @keyframes animScreen {
+        from {
+            box-shadow: inset 0 0 50px 0px #000;
+            z-index: 100;
+        }
+        50%{
+            box-shadow: inset 0 0 20px 1920px #000;
+        }
+        99%{box-shadow: inset 0 0 50px 0px #000;}
+        to{
+            
+            z-index: 0;
+        }
+    }
+}
+
+.hiddenContent{
+    display: none !important;
+}
+.active{
+    display: block;
+}
+
+// КНОПКА
+.btn {
+}
+
+// hovers
+.ui-text-color-hover:hover{
+    color: #f9f047;
+    background-image: linear-gradient(to top, #0fd850 0%, #2ef107 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: #ffffff07 !important;
+    text-shadow:    -0px 0px 2px #000,
+                    -2px 0px 3px #fffb00,
+                    4px 0px 3px #f9f047,   
+                    -6px 0px 3px #2ef107,   
+                    8px 0px 3px #0fd850, 
+
+    ;
+}

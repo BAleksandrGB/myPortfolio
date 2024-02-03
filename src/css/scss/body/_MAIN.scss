@@ -1,0 +1,18 @@
+@import "../mods/Variables";
+
+
+
+
+
+.main {
+    position:relative;
+    @import "../blocks/Hero";
+    @import "../blocks/About";
+    @import "../blocks/Works";
+
+    
+   
+}
+
+
+
