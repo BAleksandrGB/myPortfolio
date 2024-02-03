@@ -14,7 +14,7 @@
 <img src="./readme/php.png" width="100" height="40" alt="php.png">
 
 
-<img src="./readme/baner.png" width="100%" alt="baner.png">
+<img src="./readme" width="100%" alt="baner.png">
 
 
 
