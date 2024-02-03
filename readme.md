@@ -5,19 +5,19 @@
 
 <p align="center">
   
-<img src="./readme/html.png" width="100" height="40" alt="html.png"> 
-<img src="./readme/css.png"  width="100" height="40" alt="css.png"> 
-<img src="./readme/js.png" width="100" height="40" alt="js.png"> 
-<img src="./readme/react.png"  width="100" height="40" alt="react.png">
-<img src="./readme/php.png" width="100" height="40" alt="php.png">
+<img src="./img/html.png" width="100" height="40" alt="html.png"> 
+<img src="./img/css.png"  width="100" height="40" alt="css.png"> 
+<img src="./img/js.png" width="100" height="40" alt="js.png"> 
+<img src="./img/react.png"  width="100" height="40" alt="react.png">
+<img src="./img/php.png" width="100" height="40" alt="php.png">
 
-</p>
+
 
 ## Description
 
-<p align="center">
 
-<img src="readme/header.png" width="100%" alt="baner.png">
+
+<img src="img/header.png" width="100%" alt="baner.png">
 
 
 </p>
