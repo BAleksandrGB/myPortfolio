@@ -8,20 +8,19 @@
 
 <p align="center">
   
-<img src="./readme/Безымянный-1.svg" width="200" height="80">
+<img src="./readme/Безымянный-1.svg" width="100" height="40">
 
-<img src="./readme/css.svg"  width="200" height="80">
+<img src="./readme/css.svg"  width="100" height="40">
 
-<img src="./readme/js.svg" width="200" height="80">
+<img src="./readme/js.svg" width="100" height="40">
 
-<img src="./readme/react.svg"  width="200" height="80">
+<img src="./readme/react.svg"  width="100" height="40">
 
-<img src="./readme/php.svg" width="200" height="80">
+<img src="./readme/php.svg" width="100" height="40">
 
 
-<img src="https://avatars.mds.yandex.net/i?id=79e46d36bf3687329135542e19a56f5e940f5d93-3833005-images-thumbs&ref=rim&n=33&w=480&h=215" width="100%">
+<img src="" width="100%">
 
-<h2 align="center"><a  href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
 
 ### [Contributions are Welcome](https://github.com/silent-lad/VueSolitaire/blob/master/CONTRIBUTING.md)
 
@@ -30,7 +29,7 @@
 **NOW WITH DRAG AND DROP**
 
 <p align="center">
-<img src="https://media.giphy.com/media/7OWdOQupgCClrZb19P/giphy.gif" width="80%"></p>
+<img src="./readme/baner.png" width="80%"></p>
 
 Solitaire implemented by scratch on vue.js. It contains 3 types of solitaire namely spider(which was made famous by microsoft back when I was a kid) ,spider 4 suit and klondike. I've learned web development myself without any course or coaching so don't expect too much from the source code xD.
 
