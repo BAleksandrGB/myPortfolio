@@ -8,15 +8,15 @@
 
 <p align="center">
   
-<img src="./readme/Безымянный-1.svg">
+<img src="./readme/Безымянный-1.svg" width="200" height="80">
 
-<img src="./readme/css.svg" >
+<img src="./readme/css.svg"  width="200" height="80">
 
-<img src="./readme/js.svg">
+<img src="./readme/js.svg" width="200" height="80">
 
-<img src="./readme/react.svg" >
+<img src="./readme/react.svg"  width="200" height="80">
 
-<img src="./readme/php.svg">
+<img src="./readme/php.svg" width="200" height="80">
 
 
 <img src="https://avatars.mds.yandex.net/i?id=79e46d36bf3687329135542e19a56f5e940f5d93-3833005-images-thumbs&ref=rim&n=33&w=480&h=215" width="100%">
