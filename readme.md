@@ -11,21 +11,13 @@
 <img src="./readme/react.png"  width="100" height="40" alt="react.png">
 <img src="./readme/php.png" width="100" height="40" alt="php.png">
 
-<<<<<<< HEAD
-
-<img src="./readme" width="100%" alt="baner.png">
-
-
-
-=======
 </p>
->>>>>>> 346b1e1cfaba0708a881e591fad727bed4623634
 
 ## Description
 
 <p align="center">
 
-<img src="readme/baner.png" width="100%" alt="baner.png">
+<img src="readme/header.png" width="100%" alt="baner.png">
 
 
 </p>
