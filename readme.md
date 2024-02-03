@@ -22,6 +22,7 @@
 ## Description
 <p align="center">
 <img src="./readme/baner.png" width="100%" alt="baner.png">
+![Изображение](./readme/baner.png"Все будет хорошо!!!")
 </p>
 
 **This is project my site portfolio**
@@ -59,11 +60,11 @@
 
 <p align="center">Так-же с удовольствием приму предложения по трудоустройству на позиции front-end разработчик, верстальщик,full-stack разработчик, react-разработчик.</p>
 
-### Контакты / Contacts
+## Контакты / Contacts
 
-# Country: Russia
-# City: Sant-Petersberg
-# email: baleksandr012@yandex.ru
-# tel: +7(981)173-38-24
+#### Country: Russia
+#### City: Sant-Petersberg
+#### email: baleksandr012@yandex.ru
+#### tel: +7(981)173-38-24
 
 
