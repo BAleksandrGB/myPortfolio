@@ -14,12 +14,14 @@
 <img src="./readme/php.png" width="100" height="40" alt="php.png">
 
 
-<img src="./readme/baner.png" width="100%" alt="baner.png">
+
 
 
 
 
 ## Description
+
+<img src="./readme/baner.png" width="100%" alt="baner.png">
 
 **This is project my site portfolio**
 **Этот скромный проект моего портфолио**
