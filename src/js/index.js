@@ -221,45 +221,37 @@ $(document).ready(function () {
 
 
   // Переменные:
-  var current_scroll_position = 0;//текущая позиция скролла
-  var scroll_target_position = 0;// целевая позиция до которой нужно прокрутить скролл
+  var current_scroll_position = 0;
+  var scroll_target_position = 0;
   var previous_position = 0;
   var count = 0;
   var array_of_positions = [];
   var checkOnce = true;
   var target_position_images = 0;
 
-  var countPic = 0;
+ 
 
-  // функция определения scroll_target_position и поциции .visualization-image
+  
   function cps() {
     if (previous_position < current_scroll_position) {
       scroll_target_position += array_of_positions[count] + 100;
-
-
 
       if (count >= 1) {
 
         $('#scene').animate({ scrollTop: target_position_images += $('.visualization-image').outerHeight() }, 500);
       }
-
     }
     else {
       previous_position -= array_of_positions[count] + 100;
 
       $('#scene').animate({ scrollTop: target_position_images -= $('.visualization-image').outerHeight() }, 500);
-
     }
-
     console.log(count);
   }
 
   function hendllerScroll(){
     current_scroll_position = Math.floor($('#contentId').scrollTop());
     
-
-
-    // сохранияем высоты блоков текста (они будут метками и запускаем cps() для определения первого расстояния до второго блока с текстом)
     if (checkOnce) {
       checkOnce = false;
 
@@ -274,16 +266,7 @@ $(document).ready(function () {
 
 
     if (current_scroll_position > scroll_target_position) {
-
-
-
-   
-      
-
-
       previous_position = scroll_target_position;
-
-
 
       if (count != 4) {
         count++;
@@ -296,14 +279,10 @@ $(document).ready(function () {
     }
 
     if (current_scroll_position < previous_position) {
-
       scroll_target_position = previous_position;
-
 
       count--
       cps();
-      
-
     }
   }
 
@@ -312,7 +291,6 @@ $(document).ready(function () {
   $('#contentId').on('wheel', function (e) {
  
   
-
 
      // Игнорировать дополнительные обработки при задержке
   if (scrollTimeout) {
