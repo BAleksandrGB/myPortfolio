@@ -52,6 +52,10 @@ $(document).ready(function () {
   // настройка работы аккордиона
   accordion_action('.competences__accord-btn');
 
+
+  // фильтрация моих работ
+  filterWorks();
+
   // прослушка прокрутки страницы
   $(window).on("scroll", function () {
 
@@ -77,56 +81,181 @@ $(document).ready(function () {
 
 
 
+  function selectCategoryes() {
+    // событие клик по кнопке "Верстка" [data-layout]
+    $('[data-layout]').click(function () {
+      $(".works__card").show();
+
+      $('[data-AppsBtns]').slideUp("slow");
+      $('.groupCards-apps').slideUp("slow")
 
 
-  // событие клик по кнопке "Верстка" [data-layout]
-  $('[data-layout]').click(function () {
-    $(".works__card").show();
-
-    $('[data-AppsBtns]').slideUp("slow");
-    $('.groupCards-apps').slideUp("slow")
+      $("[data-LayoutBtns]").slideDown(1000);
+      $(".groupCards-layout").slideDown(1000)
 
 
-    $("[data-LayoutBtns]").slideDown(1000);
-    $(".groupCards-layout").slideDown(1000)
+    });
 
 
-  });
+    // событие клик по кнопке "Приложения" [data-apps]
+    $('[data-apps]').click(function () {
+      $(".works__card").show();
+
+      $('[data-LayoutBtns]').slideUp("slow");
+
+      $('.groupCards-layout').slideUp("slow");
 
 
-  // событие клик по кнопке "Приложения" [data-apps]
-  $('[data-apps]').click(function () {
-    $(".works__card").show();
+      $("[data-AppsBtns]").slideDown(1000);
 
-    $('[data-LayoutBtns]').slideUp("slow");
-
-    $('.groupCards-layout').slideUp("slow");
-
-
-    $("[data-AppsBtns]").slideDown(1000);
-
-    $(".groupCards-apps").slideDown(1000);
-
-
-
-  });
+      $(".groupCards-apps").slideDown(1000);
 
 
 
+    });
 
-  $('.works__filter-btn').click(function () {
-    let filterName = $(this).data("filter");
+  }
 
-    $(".works__card").filter(`:not(.${filterName})`).hide();
-    $(".works__card").filter(`.${filterName}`).show();
 
-  })
+
+
+
+  function filterWorks() {
+    selectCategoryes()
+
+
+
+
+    $('.works__filter-btn').click(function () {
+      let filterName = $(this).data("filter");
+      $(".works__card").filter(`:not(.${filterName})`).hide();
+      $(".works__card").filter(`.${filterName}`).show();
+    })
+  }
+
 
   // функция для слайда туггла
   function slideToggle(elem) {
     $(elem).slideToggle("slow", function () {
       $('.burger > i').toggleClass('rotate-ico');
     });
+  }
+
+
+  prewCard()
+
+  const CARDTILES = {
+    status: "medium",//["light", "medium", "light"]
+    rows: "1fr ",
+    rowsPos: 1,
+
+    /* methods*/
+    gridTemplateRows(cl, sizeCol) {
+      $(cl).css("gridTemplateRows", `repeat(${this.rowsPos},${sizeCol})`);
+    },
+
+    presentCardsHeight(cl, heighBlock) {
+      $(cl).height(heighBlock);
+    },
+
+    gridRowStartEnd(cl, start, end) {
+      $(cl).css("gridRowStart", `${start}`).css("gridRowEnd", `${end}`);
+    },
+
+    blockSize(el, h, w) {
+      $(el).height(h).width(w);
+    },
+
+    blockHide(el) {
+      $(el).hide(500);
+    },
+
+    jusContent(el) {
+      $(el).css("justify-content", "space-around");
+    },
+
+    gap(el,val){
+      $(el).css("column-gap", val);
+    },
+
+    removeInlineStyles(el) {
+      $(el).slideDown(1000);
+      setTimeout(() => {
+        $(el).attr("style", "");
+      }, 1100);
+    },
+
+    setStatus(status) {
+      switch (status) {
+        case "full":
+          this.removeInlineStyles('.works__presentCards');
+          this.removeInlineStyles(".top");
+          this.removeInlineStyles(".bottomLeft");
+          this.removeInlineStyles(".bottomRight");
+          this.blockSize(".works__card-body", 160, 260);
+          this.removeInlineStyles(".works__card-body--section:nth-child(3)");
+          this.removeInlineStyles(".works__card-header");
+          this.blockSize(".works__card", 360, 260);
+
+          // this.removeInlineStyles(".works__card-body");
+          // this.removeInlineStyles(".works__card");
+
+          this.gap(".works__body-container",80);
+          break;
+
+        case "medium":
+          this.blockHide(".top");
+    
+          this.blockSize(".works__card", 160, 260);
+
+          this.presentCardsHeight('.works__presentCards', 12.5);
+          this.presentCardsHeight(".bottomLeft", 12.5);
+          this.presentCardsHeight(".bottomRight", 12.5);
+          this.blockHide(".works__card-header");
+          this.gap(".works__body-container",40);
+          break;
+
+        case "light":
+          this.blockSize(".bottomLeft", 25, 25);
+          this.blockHide(".bottomRight");
+          this.blockSize(".works__card-body", 160, 160);
+          this.blockSize(".works__card", 160, 160);
+          this.blockHide(".works__card-body--section:nth-child(3)");
+          this.jusContent(".works__card-body");
+          this.gap(".works__body-container",20);
+          break;
+      }
+    }
+  }
+
+
+  const LOOKWORK = {
+
+  }
+
+
+  function fullWork(){
+
+  }
+
+
+  function prewCard() {
+    $('.works__presentCards').click(() => {
+
+      if (CARDTILES.status == "medium") {
+        CARDTILES.setStatus("medium");
+        CARDTILES.status = "light";
+        return;
+      }
+
+      if (CARDTILES.status == "light") {
+        CARDTILES.setStatus("light");
+        CARDTILES.status = "full";
+        return;
+      }
+      CARDTILES.setStatus("full");
+      CARDTILES.status = "medium";
+    })
   }
 
 });
