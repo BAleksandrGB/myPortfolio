@@ -1,310 +1,132 @@
 $(document).ready(function () {
-  const navId = [
-    'hero',
-    'about',
-    'work',
-    'services',
-    'contacts'
-  ]
+  // инициализация переменных
+  var animParam = [
+    "anim-title 1s 1.5s",
+    "anim-title-stoke 1.5s ",
+    'animListAbout 2s 1s'
+  ];
+  var chk = false;
+  var offset = $('.about').offset();
+  var top = offset.top;
 
+  var canvas = $('#canvas');
+  var svg__cicle__seccondaty = $('#svg-cicle-seccondaty');
+  var svg__cicle__succes = $('#svg-cicle-succes');
+  var svg__cicle__third = $("#svg-cicle-third");
+  var competences__accord = $('.competences__accord');
 
-  // bubled animation
-  bublesAnimPg();
-
-  // эфект перехода при нажатии на ссвлку в меню
-  transitionPg();
-
-  // аккордион
-  // accordion();
-
-
-
-  //function bubled animation
+  // функция для создания пузырей
   function bublesAnimPg() {
-    var htmlString = ` 
+    var htmlString = `
   <div class="circle-container">
- <div class="circle"></div>
-</div>
+    <div class="circle"></div>
+  </div>
   `;
     for (let i = 0; i < 100; i++) {
       $('body').append(htmlString);
     }
   }
 
+  // функция для работы аккордиона
+  function accordion_action(cls) {
+    $(cls).each((ind, element) => {
 
-  //function transition page
-  function transitionPg() {
-
-    navId.forEach(el => {
-      $(`#${el}`).click(function (e) {
+      // вешаем события на иконку вкладки аккордиона
+      $(element).click(function (e) {
         e.preventDefault();
 
-        $('.radial').addClass('animation-radial');
+        // добавление/удаление класса с анимацией икодки открытия вкладки
+        $(`.competences__accord-btn:nth(${ind}) > .competences__accord-btn--icon > span`).each(function (idx, elem) {
+          $(elem).toggleClass(`open${idx + 1}`);
+        });
 
-        setTimeout(() => {
-
-
-          $(`.visibleContent`).addClass('hiddenContent');
-          $(`.visibleContent`).removeClass('visibleContent');
-
-          if ($(`.${el}`).hasClass('hiddenContent')) {
-
-            $(`.${el}`).removeClass('hiddenContent');
-            $(`.${el}`).addClass('visibleContent');
-          }
-
-          if ($(`.${el}`).hasClass('active')) {
-            $('.active').removeClass('active');
-            $(`.${el}`).addClass('active')
-
-          }
-
-          // if ($(this).hasClass('work')) $('.work').toggleClass('d-none');
-          // if ($(this).hasClass('services')) $('.services').toggleClass('d-none');
-          // if ($(this).hasClass('contacts')) $('.contacts').toggleClass('d-none');
-
-        }, 600);
-
-
-        setTimeout(() => {
-          $('.radial').removeClass('animation-radial');
-
-        }, 1000);
-
-
-
+        // открытие/закрытие вкладки
+        $(`.competences__accord-body:nth(${ind})`).toggle("slow");
       });
-
-
     });
   }
 
+  // инициализация пузырей
+  bublesAnimPg();
 
+  // настройка работы аккордиона
+  accordion_action('.competences__accord-btn');
 
-  // аккордион html шаблон добавление списка в тело аккордиона
-  function html_acr_content(content) {
-    return `<li class="list-item list-group-item-action">${content}</li>`
-  }
-  // аккордион html шаблон добавление элемента аккродиона
-  function html_acr_list(count, itemAcrName) {
-    return `
-  <div class="accordion-item accordion-item-${count}">
-  <h2 class="accordion-header">
-    <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${count}" aria-expanded="false" aria-controls="flush-collapse${count}">
-      ${itemAcrName}
-    </button>
-  </h2>
-  <div id="flush-collapse${count}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-    <div class="accordion-body ui-scrollbar"><ul class="list-group"></ul></div>
-  </div>
-</div>
-  `
-  }
+  // прослушка прокрутки страницы
+  $(window).on("scroll", function () {
 
-
-  const accоrdContent = [
-    {
-      title: "Верстка",
-      content: [
-        "Верстка по макетам в Figma",
-        "Верстка по макетам в PSD",
-        "Кроссбраузерная верстка",
-        "Адаптивная верстка",
-        "Блочная верстка",
-        "Flex",
-        "Grid",
-        "Pixrl Perfect",
-        "Семантическая верстка",
-        "Использую методологию БЭМ",
-        "Препроцессоры Sass(Scss)",
-        "Библиотеки Bootstrap 5,Talwind"
-      ]
-
-    },
-    {
-      title: "Программирование",
-      content: [
-        "JavaScript",
-        "React js (база)",
-        "Node js (база)",
-        "PHP"
-      ]
-
-    },
-    {
-      title: "Сборщики",
-      content: [
-        "Gulp",
-        "WebPack"
-      ]
-
-    },
-    {
-      title: "Конфигурирование",
-      content: [
-        'Платворма 1С-Предприятие',
-      ]
-
-    },
-    {
-      title: "Версионирование",
-      content: [
-        "Git",
-        "GitHub"
-      ]
-
-    },
-    {
-      title: "Работа в графических программах",
-      content: [
-        "Figma",
-        "Photoshop",
-        "Illustrator"
-      ]
-
-    }
-  ]
-
-  // function accordion(){
-  for (let i = 0; i < accоrdContent.length; i++) {
-    const itemList = accоrdContent[i];
-
-    let stringHtml = html_acr_list((i + 1), itemList.title);
-    $(stringHtml).appendTo('.accordion');
-
-    for (let c = 0; c < itemList.content.length; c++) {
-      stringHtml = html_acr_content((itemList.content[c]));
-      $(stringHtml).appendTo('.accordion-body ul');
+    if (chk) {
+      return;
     }
 
-
-    // }
-  }
-
-
-  // function bubles animation
-  function bublesAnimPg() {
-    var htmlString = ` 
-    <div class="circle-container">
-   <div class="circle"></div>
-  </div>
-    `;
-    for (let i = 0; i < 100; i++) {
-      $('body').append(htmlString);
-    }
-  }
-
-
-
-
-  // найти по айдишнику элемент
-  // узнать координаты скролла когда этот элемент находится в нужном положении
-  // передать координаты элементу который будет всплывать
-  // задать условие - если э
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Переменные:
-  var current_scroll_position = 0;
-  var scroll_target_position = 0;
-  var previous_position = 0;
-  var count = 0;
-  var array_of_positions = [];
-  var checkOnce = true;
-  var target_position_images = 0;
-
- 
-
-  
-  function cps() {
-    if (previous_position < current_scroll_position) {
-      scroll_target_position += array_of_positions[count] + 100;
-
-      if (count >= 1) {
-
-        $('#scene').animate({ scrollTop: target_position_images += $('.visualization-image').outerHeight() }, 500);
-      }
-    }
-    else {
-      previous_position -= array_of_positions[count] + 100;
-
-      $('#scene').animate({ scrollTop: target_position_images -= $('.visualization-image').outerHeight() }, 500);
-    }
-    console.log(count);
-  }
-
-  function hendllerScroll(){
-    current_scroll_position = Math.floor($('#contentId').scrollTop());
-    
-    if (checkOnce) {
-      checkOnce = false;
-
-      $(".paragraph").each(function () {
-        array_of_positions.push($(this).height());
-      })
-
-      console.log(array_of_positions);
-      cps();
+    if ($(window).scrollTop() > top - 200) {
+      $('.about__content h1').eq(0).css('animation', `${animParam[0]} ease-in-out forwards`);
+      $('.about__content h1').eq(1).css('animation', `${animParam[1]} ease-in-out forwards`);
+      $('.about__content ul').css('animation', `${animParam[2]} ease-in-out forwards`);
+      chk = true;
     }
 
+  });
+
+  // функция для работы бургера
+  $('.burger').click(function () {
+    slideToggle(".header");
+  });
 
 
-    if (current_scroll_position > scroll_target_position) {
-      previous_position = scroll_target_position;
 
-      if (count != 4) {
-        count++;
 
-        cps();
-        
 
-      }
-      
-    }
 
-    if (current_scroll_position < previous_position) {
-      scroll_target_position = previous_position;
 
-      count--
-      cps();
-    }
-  }
+  // событие клик по кнопке "Верстка" [data-layout]
+  $('[data-layout]').click(function () {
+    $(".works__card").show();
 
-  var scrollTimeout;
+    $('[data-AppsBtns]').slideUp("slow");
+    $('.groupCards-apps').slideUp("slow")
 
-  $('#contentId').on('wheel', function (e) {
- 
-  
 
-     // Игнорировать дополнительные обработки при задержке
-  if (scrollTimeout) {
-    clearTimeout(scrollTimeout);
-  }
+    $("[data-LayoutBtns]").slideDown(1000);
+    $(".groupCards-layout").slideDown(1000)
 
-  scrollTimeout = setTimeout(function() {
-    hendllerScroll();
-  
-    console.log(current_scroll_position);
 
-    // Сбросить таймаут
-    scrollTimeout = null;
-  }, 200); // Задержка в миллисекундах
+  });
+
+
+  // событие клик по кнопке "Приложения" [data-apps]
+  $('[data-apps]').click(function () {
+    $(".works__card").show();
+
+    $('[data-LayoutBtns]').slideUp("slow");
+
+    $('.groupCards-layout').slideUp("slow");
+
+
+    $("[data-AppsBtns]").slideDown(1000);
+
+    $(".groupCards-apps").slideDown(1000);
+
+
+
+  });
+
+
+
+
+  $('.works__filter-btn').click(function () {
+    let filterName = $(this).data("filter");
+
+    $(".works__card").filter(`:not(.${filterName})`).hide();
+    $(".works__card").filter(`.${filterName}`).show();
 
   })
+
+  // функция для слайда туггла
+  function slideToggle(elem) {
+    $(elem).slideToggle("slow", function () {
+      $('.burger > i').toggleClass('rotate-ico');
+    });
+  }
+
 });

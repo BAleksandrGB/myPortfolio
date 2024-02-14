@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфолио веб-разработчика Александра Большова">
+    <meta name="keywords"
+        content="веб разработка, верстка сайта, программирование сайта, HTML, CSS, JavaScript, React, PHP, веб-разработчик, портфолио">
+
     <!-- icon fonts -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -33,102 +37,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-utilities.min.css"
         integrity="sha512-IspcQcJxnKFKfac3SzzLPXyGt77Twdkh1QmoLJlk+VDWCeGNVf7rCl/Srop+WwzX3S7IS2nxe9sfqLuMergysw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- swiper -->
-
-  
-
-
 
 
     <!-- styles -->
-    <link rel="stylesheet" href="./src/css/resrt.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/resrt.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
 
-    <title>Bihaince</title>
+    <title>Portfolio</title>
 </head>
 
-<body>
+<body class="font-Montserrat">
 
-
-
-    <nav class="acide position-fixed top-0  vh-100 d-flex justify-content-start align-items-center">
-
-        <ul class="menu d-flex flex-column ">
-
-            <a class="link" id="hero" href="#">
-                <li> Home </li>
-            </a>
-
-            <a class="link" id="about" href="http://">
-                <li> Обо мне </li>
-            </a>
-
-            <a class="link" id="work" href="http://">
-                <li>Мои работы</li>
-            </a>
-            <a class="link" id="services" href="http://">
-                <li>Фрилас учлуги</li>
-            </a>
-            <a class="link" id="contacts" href="http://">
-                <li>Контакты</li>
-            </a>
-        </ul>
-    </nav>
-
-    <acide class="screen">
+    <aside class="screen">
         <div class="radial"></div>
-    </acide>
+    </aside>
 
 
-    <header class="header ui-text-color w-100">
+
+
+
+    <header class="header  w-100">
         <div class="container container-md h-100  text-nowrap py-4">
             <div class="row justify-content-between align-items-center">
+                <!-- logo and resum -->
                 <div class="lightResume col-lg-6 col-md-6">
+
                     <div class="container-fluid  d-flex align-items-center">
+                        <!-- logo -->
                         <a class="logo display-5" href="./index.html" class="logo">
-                            <h1>Alexandr B.</h1>
+                            <a href="./index.html">
+                                <h1>Alexandr B.</h1>
+                            </a>
                         </a>
 
-
-                        <div class="container gap-md-4 d-none d-lg-flex">
+                        <!-- resum  -->
+                        <div class="container competenc gap-md-4 d-none d-lg-flex">
                             <div class="d-grid gap-2 border-end px-3 ">
-                                <p class="h6 m-0 fs-6 icon-link icon-link-hover ui-text-color "><span
-                                        class="bi">-</span> Front-End developer</p>
-                                <p class="h6 m-0 fs-6 icon-link icon-link-hover ui-text-color "><span
-                                        class="bi">-</span> Верстальщик</p>
+                                <p class="m-0">
+                                    - Front-End developer</p>
+                                <p class="m-0">- Верстальщик</p>
                             </div>
                             <div class="d-grid gap-2">
-                                <p class="h6 m-0 fs-6 icon-link icon-link-hover ui-text-color"><span class="bi">-</span>
-                                    React - developer</p>
-                                <p class="h6 m-0 fs-6 icon-link icon-link-hover ui-text-color"><span class="bi">-</span>
-                                    1С developer</p>
+                                <p class="m-0">- React developer</p>
+                                <p class="m-0">- 1С developer</p>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="info col-lg-3 col-sm-4 col-sm-3  d-flex justify-content-between ">
-
+                <!-- contacts and social -->
+                <div class="info col-lg-4 col-sm-4 col-sm-3  d-flex justify-content-between ">
+                    <!-- contacts -->
                     <div class="contacts col-1 d-grid">
                         <a class="border-bottom pb-2 " href="tel:+79811733824">tel: +7(981)173-38-24</a>
                         <a class="pt-2 " href="mailto:baleksandr012@yandex.ru">e-mail: baleksandr012@yandex.ru</a>
                     </div>
-                    <div class="social d-flex gap-4 ">
+                    <!-- social -->
+                    <div class="social col-5 d-flex gap-4 ">
 
 
-                        <a class=" ui-text-color-alt ui-text-color-hover" href="#">
-                            <i class="fa-brands fa-vk h2 ui-shadow-xlg"></i>
+                        <a class="  ui-text-color-hover" href="#">
+                            <i class="fa-brands fa-vk  ui-shadow-xlg"></i>
                         </a>
 
 
                         <a class=" ui-text-color-alt ui-text-color-hover" href="#">
-                            <i class="fa-brands fa-github h2 ui-shadow-xlg"></i>
+                            <i class="fa-brands fa-github  ui-shadow-xlg"></i>
                         </a>
 
 
                         <a class=" ui-text-color-alt ui-text-color-hover" href="#">
-                            <i class="fa-brands fa-youtube h2 ui-shadow-xlg"></i>
+                            <i class="fa-brands fa-youtube  ui-shadow-xlg"></i>
                         </a>
 
 
@@ -138,340 +118,678 @@
 
             </div>
         </div>
-
     </header>
 
-
-    <main class="main">
-        <div class="container">
-
-            <!-- Главный экран -->
-            <div class="hero flex-sm-wrap visibleContent">
+    <aside class="burger">
+        <i class="fa-solid fa-arrow-up-wide-short fa-xl"></i>
+    </aside>
 
 
-                <!-- Блок текстовой -->
-                <div class="hello">
+    <main class="main ">
 
-                    <div class="content">
+        <!-- hero -->
+        <section class="hero__section container-fluid">
+            <div class="container">
+                <!-- Главный экран -->
+                <div class="hero flex-sm-wrap">
 
-                        <h2 class="display-6 ">Приветствую! </h2>
-                        <p >Меня зовут Александр, и я занимаючь веб-разработкой.</p>
-
-                        <ul>
-                            <li>Моя Специализация: front-end</li>
-                            <li>Обладаю навыками вёрстки и программирования сайтов.</li>
-                        </ul>
-
-                        <p>В меню слево вы можете ознакомиться с моими работами, услугами и найти мои контакты.</p>
-
-                    </div>
-
-
-
-
-                </div>
-
-
-                <!-- Блок диаграмм -->
-                <div class="skills d-flex flex-wrap justify-content-center align-items-center p-2 display-5 col-4 pt-5">
-
-                    <!-- HARD -->
-                    <h2>hardskills</h2>
-                    <div class="wrapper-hs d-flex flex-wrap justify-content-center align-items-center">
-                        <!-- HARD -->
-
-                        <div class="hardSkills d-flex justify-content-center  flex-wrap gap-5">
-
-
-                            <!-- SKILL -->
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end">
-
-                                    <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-1"></div>
-                                </div>
-                                <!-- label -->
-                                <h2 class="skill-name h3">HTML</h2>
-                            </div>
-
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end"> <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-2"></div>
-                                </div> <!-- label -->
-                                <h2 class="skill-name h3">CSS</h2>
-                            </div>
-
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end"> <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-3"></div>
-                                </div> <!-- label -->
-                                <h2 class="skill-name h3">JS</h2>
-                            </div>
-
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end">
-                                    <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-4"></div>
-                                </div>
-                                <!-- label -->
-                                <h2 class="skill-name h3">React</h2>
-                            </div>
-
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end">
-                                    <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-5"></div>
-                                </div>
-                                <!-- label -->
-                                <h2 class="skill-name h3">PHP</h2>
-                            </div>
-                        </div>
-                        <!-- HARD -->
-
-                        <div class="hardSkills d-flex flex-wrap justify-content-center gap-5">
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end">
-                                    <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-6"></div>
-                                </div>
-                                <!-- label -->
-                                <h2 class="Skill-name h3">sass</h2>
-                            </div>
-
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end">
-                                    <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-7"></div>
-                                </div>
-                                <!-- label -->
-                                <h2 class="skill-name h3">gulp</h2>
-                            </div>
-
-
-                            <div class="skill d-flex flex-column gap-2 align-items-center">
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex align-items-end">
-                                    <!-- diagramm-column-color -->
-                                    <div class="filledOut w-100 anim-diag-8"></div>
-                                </div>
-                                <!-- label -->
-                                <h2 class="skill-name h3">git</h2>
-                            </div>
-
-
-
-
+                    <!-- Блок текстовой -->
+                    <div class="hello">
+                        <div class="container">
+                            <h2>Привет!!</h2>
+                            <p>Меня зовут Александр. Я из Санкт-Петербурга и&nbsp;увлекаюсь&nbsp;версткой и
+                                программированием сайтов.
+                            </p>
+                            <br>
+                            <strong>Моя цель продолжить развитие как front-end разработчик в хорошей веб-студии и
+                                создавать крутые проекты.</strong>
                         </div>
                     </div>
-                    <!-- SOFT -->
-                    <h2>softskills</h2>
-                    <div class="softSkills d-flex flex-wrap justify-content-center  gap-5">
 
 
-                        <!-- left -->
-                        <div class="softScills-lColumn">
+                    <!-- Блок диаграмм -->
+                    <div class="skills d-flex flex-wrap justify-content-center align-items-center p-2 col-4 pt-5">
 
-                            <div class="skill d-flex flex-row-reverse gap-1 align-items-center">
-                                <!-- label -->
-                                <h2 class="Skill-name h3">Photoshop</h2>
-                                <!-- diagramm -->
-                                <div class="skill-diag d-flex justify-content-end align-items-end">
-                                    <!-- diagramm-olumn-color -->
-                                    <div class="filledOut h-100 anim-diag-1"></div>
+                        <div class="container">
+                            <!-- HARD -->
+                            <h2>hardskills</h2>
+                            <div class="wrapper-hs d-flex flex-wrap justify-content-center align-items-center">
+                                <!-- HARD -->
+
+                                <div class="hardSkills d-flex justify-content-center  flex-wrap gap-5">
+
+
+                                    <!-- SKILL -->
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end">
+
+                                            <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-1"></div>
+                                        </div>
+                                        <!-- label -->
+                                        <h3 class="skill-name ">HTML</h3>
+                                    </div>
+
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end"> <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-2"></div>
+                                        </div> <!-- label -->
+                                        <h3 class="skill-name ">CSS</h3>
+                                    </div>
+
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end"> <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-3"></div>
+                                        </div> <!-- label -->
+                                        <h3 class="skill-name ">JS</h3>
+                                    </div>
+
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end">
+                                            <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-4"></div>
+                                        </div>
+                                        <!-- label -->
+                                        <h3 class="skill-name ">React</h3>
+                                    </div>
+
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end">
+                                            <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-5"></div>
+                                        </div>
+                                        <!-- label -->
+                                        <h3 class="skill-name ">PHP</h3>
+                                    </div>
+                                </div>
+                                <!-- HARD -->
+
+                                <div class="hardSkills d-flex flex-wrap justify-content-center gap-5">
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end">
+                                            <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-6"></div>
+                                        </div>
+                                        <!-- label -->
+                                        <h3 class="Skill-name ">sass</h3>
+                                    </div>
+
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end">
+                                            <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-7"></div>
+                                        </div>
+                                        <!-- label -->
+                                        <h3 class="skill-name ">gulp</h3>
+                                    </div>
+
+
+                                    <div class="skill d-flex flex-column gap-2 align-items-center">
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex align-items-end">
+                                            <!-- diagramm-column-color -->
+                                            <div class="filledOut w-100 anim-diag-8"></div>
+                                        </div>
+                                        <!-- label -->
+                                        <h3 class="skill-name ">git</h3>
+                                    </div>
+
+
+
+
                                 </div>
                             </div>
+                            <!-- SOFT -->
+                            <h2>softskills</h2>
+                            <div class="softSkills d-flex flex-wrap justify-content-center  gap-5">
 
-                            <div class="skill d-flex flex-row-reverse gap-2 align-items-center">
-                                <!-- label -->
-                                <h2 class="Skill-name h3">Figma</h2>
-                                <!-- diagramm -->
-                                <div class="sopfskill-diag skill-diag d-flex justify-content-end align-items-end">
-                                    <!-- diagramm-olumn-color -->
-                                    <div class="filledOut  h-100 anim-diag-2"></div>
+
+                                <!-- left -->
+                                <div class="softScills-lColumn">
+
+                                    <div class="skill d-flex flex-row-reverse gap-1 align-items-center">
+                                        <!-- label -->
+                                        <h3 class="Skill-name ">Photoshop</h3>
+                                        <!-- diagramm -->
+                                        <div class="skill-diag d-flex justify-content-end align-items-end">
+                                            <!-- diagramm-olumn-color -->
+                                            <div class="filledOut h-100 anim-diag-1"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill d-flex flex-row-reverse gap-2 align-items-center">
+                                        <!-- label -->
+                                        <h3 class="Skill-name ">Figma</h3>
+                                        <!-- diagramm -->
+                                        <div
+                                            class="sopfskill-diag skill-diag d-flex justify-content-end align-items-end">
+                                            <!-- diagramm-olumn-color -->
+                                            <div class="filledOut  h-100 anim-diag-2"></div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
+
+                                <!-- right -->
+                                <div class="softScills-RColumn ">
+
+                                    <div class="skill d-flex  gap-1 align-items-center">
+                                        <!-- label -->
+                                        <h3 class="Skill-name ">VSCode</h3>
+                                        <!-- diagramm -->
+                                        <div class="sopfskill-diag skill-diag d-flex align-items-end">
+                                            <!-- diagramm-olumn-color -->
+                                            <div class="filledOut h-100 anim-diag-3"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="skill d-flex  gap-2 align-items-center">
+                                        <!-- label -->
+                                        <h3 class="Skill-name ">Illustrator</h3>
+                                        <!-- diagramm -->
+                                        <div class="sopfskill-diag skill-diag d-flex align-items-end">
+                                            <!-- diagramm-olumn-color -->
+                                            <div class="filledOut  h-100 anim-diag-4"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
                             </div>
-
-
                         </div>
-
-
-                        <!-- right -->
-                        <div class="softScills-RColumn ">
-
-                            <div class="skill d-flex  gap-1 align-items-center">
-                                <!-- label -->
-                                <h2 class="Skill-name h3">VSCode</h2>
-                                <!-- diagramm -->
-                                <div class="sopfskill-diag skill-diag d-flex align-items-end">
-                                    <!-- diagramm-olumn-color -->
-                                    <div class="filledOut  h-100 anim-diag-3"></div>
-                                </div>
-                            </div>
-
-
-                            <div class="skill d-flex  gap-2 align-items-center">
-                                <!-- label -->
-                                <h2 class="Skill-name h3">Illustrator</h2>
-                                <!-- diagramm -->
-                                <div class="sopfskill-diag skill-diag d-flex align-items-end">
-                                    <!-- diagramm-olumn-color -->
-                                    <div class="filledOut  h-100 anim-diag-4"></div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
                     </div>
                 </div>
             </div>
+        </section>
 
 
-            <!-- Экран обо мне -->
-            <div class="about hiddenContent">
-                <div class="wrapper ui-scrollbar" id="contentId">
-                <div class="content  ui-scrollbar " >
-                    <div id="im" class=" paragraph d-grid  gap-5">
-                        <h2 class="h1">Кратко о себе.</h2>
 
-                        <p class="h2">
-                            Меня зовут Александр. Родился и живу в Санки-Петербурге.
-
-                            Первый мой комьютер у меня появмлся в 12 лет.Это быд Intel Celeron с тактовой частотой 2Ггц.
-                            И
-                            первым делом я начал изучать устройство windows 7. Перекапал все системные файлы, просто
-                            было
-                            интересно зачем они нужны и как устроина система.
-                        </p>
-                    
-                    </div>
-
-                    <div id="education" class=" paragraph d-grid  gap-5">
-                        <h2 class="h1">Образование</h2>
-                        <p class="h2">
-                            В школе я учился нормально.Не плохо, но и отличником небыл. Любимые предметы были, само
-                            собой
-                            информатика, а так-же геометрия, биология, обществознание.
-                        </p>
-                        <p class="h2">По окончанию 9 классов так и не
-                            определилися куда поступать и поэтому пошел в 10-11 класс. Окончив школу хотел поступить в
-                            унивеоситет на "Информационные системы и технологии", однако по Английскому языку недобрал
-                            балов.
-                            И поступил в авиаремонтный колледж. Затем закончил Университет по специальности экономика и
-                            управление.</p>
-                    </div>
-
-                    <div id="WorkExperience" class=" paragraph d-grid  gap-5">
-                        <h2>Трудовая деятельность и веб разработка.</h2>
-
-                        <p class="h2">Пока учился, работал автомаляом у оффициального диллера. После окончания обучения
-                            продолжил работу в автобизнесе т.к. банально заработок был на порядок выше, чем предложения
-                            по специальности экономистом без опыта.
-                        </p>
-                        <p class="h2">Хоть я и достиг весьма неплохих результатлв на позиции автомаляра, сама работа мне
-                            удовольствия никакого не приносила, только деньги.</p>
-                    </div>
-
-                    <div id="webDev" class=" paragraph d-grid  gap-5">
-                        <h2 class="h1">Веб-разработка</h2>
-                        <p class="h2">Три года назад интернет стал пестрить курсами о переподготовке на програмистов,
-                            курсы были
-                            дорогие,но меня это очень заинтересовало и я поступил на факультет веб-разработки.</p>
+        <!-- about -->
+        <section class="about">
+            <div class="about__container container">
 
 
-                        <p>На факультете я прошел несколько курсов, такие как:</p>
-                        <ul class="d-grid gap-3">
+                <div class="about__content w-40">
+                    <h1>О себе</h1>
+                    <h1>О себе</h1>
+                    <ul>
+                        <li>Степень: Веб-разработчик</li>
 
-                            <li class="list-group-item list-group-item-action">"Основы программирования"</li>
-                            <li class="list-group-item list-group-item-action"> ,"Верстка сайтов"</li>
-                            <li class="list-group-item list-group-item-action"> "ПРофессиональная верстка сайтов"</li>
-                            <li class="list-group-item list-group-item-action"> "Javascript-основы"</li>
-                            <li class="list-group-item list-group-item-action"> "Углубленнай курс Javascript"</li>
-                            <li class="list-group-item list-group-item-action"> "React Js"</li>
-                            <li class="list-group-item list-group-item-action"> "базы данных mySql"</li>
-                            <li class="list-group-item list-group-item-action"> "базы данных PostreSQL"</li>
-                            <li class="list-group-item list-group-item-action"> "PHP"</li>
-                        </ul>
-                    </div>
+                        <li>Год рождения: 1986г.</li>
+                        <li>Опыт работы: 5 месяцев</li>
 
-                    <div id="now" class=" paragraph d-grid  gap-5">
-                        <h2>Сейчас</h2>
-                        <p>Сейчас активно изучаю все, что связанно с веб-разработкой. </p>
-                            <p>Помимо оффициальных курсов прошел несколько бесплатных курсов, занимался и продолжаю</p>
-                            заниматься самообразованием в области веб разработки, читаю техническую литературу,прохожу
-                            вебинары для веб разработчиков с российских и зарубежных ресурсов.</p>
+                        <li>Email: dimalev74@mail.ru</li>
+                        <li>ФИО: Большов Александр Викторович</li>
+                        <li>Адрес: Россия, Санкт-Петербург.</li>
+                    </ul>
+                </div>
+                <div class="visual w-40">
+                    <img src="./src/img/3.png" width="300" alt="spb.svg">
+                </div>
+            </div>
+        </section>
 
-                        <p>Имею сильную мотивацию в развитии по направлению front-end, fullstack разработки,верстка</p>
+        <!-- competences -->
+        <section class="competences">
+            <div class="competences__wrapper container">
+                <div class="competences__content w-40">
+                    <h2>Мои навыки и знания</h2>
+                    <h3>Здесь кратко описаны мои навыки и знания в верстке и веб-разработке.</h3>
+                    <hr>
 
-                        <h2 class="h2">Сейчас обладаю следующими компетенциями:</h2>
+                    <div class="competences__accord">
+                        <div class="competences__accord-container">
 
-                        <div class="menuStack d-flex flex-column">
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="competences__accord-item">
+                                <button class="competences__accord-btn">
+                                    <h2>Вёрстка</h2><span class="competences__accord-btn--icon">
+                                        <span class="cicle"></span>
+                                        <span class="cicle"></span>
+                                        <span class="cicle"></span>
+                                    </span>
+                                </button>
+                                <div class="competences__accord-body">
+                                    <h2>Для современного мира.</h2>
+                                    <p>Прежде всего рамки и место обучения кадров позволяет оценить значение системы
+                                        обучения кадров, соответствующей насущным потребностям. Задача организации, в
+                                        особенности же новая модель организационной деятельности способствует подготовке
+                                        и реализации модели развития.</p>
+                                </div>
                             </div>
+
+                            <div class="competences__accord-item">
+                                <button class="competences__accord-btn">
+                                    <h2>Программирование</h2><span class="competences__accord-btn--icon">
+                                        <span class="cicle"></span>
+                                        <span class="cicle"></span>
+                                        <span class="cicle"></span>
+                                    </span>
+                                </button>
+                                <div class="competences__accord-body">
+                                    <h3 class="lead">JavaScript</h3>
+                                    <p class="">изучпть <mark>JavaScript</mark> начал на курсах веб-разработки.Во время
+                                        обучения <mark>изучил</mark> работу с <mark>массивами</mark>, <mark>методами
+                                            массивов</mark>, <mark>циклами</mark>, <mark>объектами</mark>,
+                                        <mark>прототипирование</mark>, <mark>ООП</mark>, <mark>restApi</mark>.
+                                    </p>
+                                    <h4 class="text-bg-success  align-content-center"><a href="#sertificats">Мои
+                                            сертификаты JavaScript</a></h4>
+                                    <hr>
+                                    <h3 class="lead">React Js</h3>
+                                    <p class="">Окончил курсы по React Js. В теме курса изучали <mark>основы
+                                            react</mark>: <mark>хукки</mark>, <mark>redux</mark>, <mark>работу со
+                                            storege</mark>, <mark>запросы и взаимодействие с бд PostgreSQL</mark> </p>
+                                    <h4 class="text-bg-success  align-content-center"><a href="#sertificats">Мои
+                                            сертификаты React Js</a></h4>
+                                    <hr>
+                                    <h3 class="lead">Node js</h3>
+                                    <p>Самые основы.Могу написать элементарный сервер.</p>
+                                    <p>Пока не углублялся в изучение Node Js</p>
+
+                                    <hr>
+                                    <h3 class="lead">PHP</h3>
+                                    <p>PHP так-же изучал на пройденных курсах.Однако прошёл только основы php.</p>
+                                    <h4 class="text-bg-success  align-content-center"><a href="#sertificats">Мои
+                                            сертификаты PHP</a></h4>
+                                    <hr>
+                                    <h3 class="lead">Также изучена тема и пройденны курсы по базам данных mySql и
+                                        PostgreSql</h3>
+                                    <h4><a href="#sertificats">Мои сертификаты mySql, PostgreSql</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="competences__accord-item">
+                                <button class="competences__accord-btn">
+                                    <h2>Графический дизайн</h2><span class="competences__accord-btn--icon">
+                                        <span class="cicle"></span>
+                                        <span class="cicle"></span>
+                                        <span class="cicle"></span>
+                                    </span>
+                                </button>
+                                <div class="competences__accord-body">
+                                    <h2>Графический дизайн</h2>
+                                    <p>Помимо веб-разработки, мне так-же мнтересен граический дизайн,3д
+                                        моделирование.Владею на базовом уровн: </p>
+                                    <div class="w-100 d-flex justify-content-between align-items-center">
+                                        <ul>
+                                            <li class="strong">CorelDraw</li>
+                                            <li class="strong">Illustrator</li>
+                                            <li class="strong">3D-Max</li>
+                                        </ul>
+                                        <img src="./src/img/graphics/css.png" width="200" height="100" alt=".jpg">
+                                        <img src="./src/img/graphics/js.png" width="200" height="100" alt=".jpg">
+                                    </div>
+                                    <hr>
+                                    <p>А так-же на среднем уровне:</p>
+                                    <div class="w-100 d-flex  align-items-center">
+                                        <ul>
+                                            <li class="strong">Photoshop</li>
+                                            <li class="strong">Figma</li>
+                                        </ul>
+                                        <img src="./src/img/тест.png" width="200" height="100" alt=".jpg">
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                         </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- works -->
+        <section class="works container-fluid">
+            <div class="works__wrapper ">
+
+
+                <div class="works__panel container">
+                    <div class="works__filter">
+
+                        <!-- btns apps & layouts -->
+                        <div class="works__filter-title">
+                            <!-- layouts -->
+                            <button class="h6" type="button" data-layout>Верстка</button>
+                            <!-- apps -->
+                            <button class="h6" type="button" data-apps>Приложения</button>
+                        </div>
+
+
+
+
+                        <!-- layouts all-->
+                        <div class="btn-group" data-LayoutBtns>
+                            <button class="works__filter-btn btn" type="button" data-Filter="filter-Landing"
+                                value="Лендинги">Лендинги</button>
+
+
+                            <button class="works__filter-btn btn" type="button" data-Filter="filter-Compamy"
+                                value="Сайт компании">Сайт компании</button>
+
+
+                            <button class="works__filter-btn btn" type="button" data-Filter="filter-Store"
+                                value="Интернет магазин">Интернет магазин</button>
+                        </div>
+
                         
+
+                        <!-- apps all-->
+                        <div class="btn-group" style="display: none;" data-AppsBtns>
+                            <button class="works__filter-btn btn" type="button" data-filter="filter-Js"
+                                value="Js приложения">Js приложения</button>
+
+
+                            <button class="works__filter-btn btn" type="button" data-filter="filter-React"
+                                value="Reaact приложения">Reaact приложения</button>
+
+
+                            <button class="works__filter-btn btn" type="button" data-filter="filter-Php"
+                                value="Php приложения">Php приложения</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="works__body">
+                    <!-- layouts all-->
+                    <div class="works__body-container justify-content-center groupCards-layout">
+
+                        <div class="works__card filter-Landing">
+                            <div class="works__card-header">
+                                <img src="https://rugraphics.ru/wp-content/uploads/less_phot/sozdayom-maket-avtosayta/001.jpg"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Text title</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-Cimpany">
+                            <div class="works__card-header">
+                                <img src="https://rugraphics.ru/wp-content/uploads/less_phot/sozdayom-maket-avtosayta/001.jpg"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Text title</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-Landing">
+                            <div class="works__card-header">
+                                <img src="https://rugraphics.ru/wp-content/uploads/less_phot/sozdayom-maket-avtosayta/001.jpg"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Text title</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-Landing">
+                            <div class="works__card-header">
+                                <img src="https://rugraphics.ru/wp-content/uploads/less_phot/sozdayom-maket-avtosayta/001.jpg"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Text title</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-Compamy">
+                            <div class="works__card-header">
+                                <img src="https://rugraphics.ru/wp-content/uploads/less_phot/sozdayom-maket-avtosayta/001.jpg"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Text title</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-Store">
+                            <div class="works__card-header">
+                                <img src="https://rugraphics.ru/wp-content/uploads/less_phot/sozdayom-maket-avtosayta/001.jpg"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Text title</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <!-- apps all-->
+                    <div class=" works__body-container justify-content-center groupCards-apps" >
+
+                        <div class="works__card filter-Js" >
+                            <div class="works__card-header">
+                                <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/06/0a/87/060a8798-e41d-6b3c-75f1-ccf906e70577/AppIcon-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
+                                 alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>Js приложение В разработке</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-React" >
+                            <div class="works__card-header">
+                                <img src="https://cdn-media-1.freecodecamp.org/images/0aE6v5BOa389ObdKL-9oglyr4KLYhBTKhrTm"
+                                height="120" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>React приложение в разработке</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="works__card filter-Php" >
+                            <div class="works__card-header">
+                                <img src="https://lh3.googleusercontent.com/4CrW_XzvN_8r5wKFhOWqIq-Fc6JuLd-vk71KTMOA4XVLH9gy26rrmvv_oN-cihWxEQ=h500"
+                                    width="220" alt="3.png">
+                            </div>
+                            <div class="works__card-body">
+                                <div class="works__card-body--section">
+                                    <h2>PHP приложение в разработке</h2>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <div class="works__card-body--iconGroup">
+                                        <i class="iconCard fa-solid fa-eye fa-flip-horizontal fa-2xs"
+                                            style="color: #e7d71e; "></i>
+                                        <i class="iconCard fa-regular fa-thumbs-up fa-flip-horizontal fa-2xs"
+                                            style="color: #13e404;"></i>
+                                        <i class="iconCard fa-solid fa-comment fa-flip-horizontal fa-2xs"
+                                            style="color: #ececec;"></i>
+                                    </div>
+                                </div>
+                                <div class="works__card-body--section">
+                                    <p>Равным образом новая модель организационной деятельности позволяет оценить
+                                        значение системы обучения кадров, соответствующей насущным потребностям.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </div>
                 </div>
             </div>
-                <div class="visualization " id="scene">
-                    <div class="visualization-image "> <img id="iamPic-1" src="./src/img/iam.png" width="100%" alt="">
-                    </div>
-                    <div class="visualization-image"> <img id="iamPic-2" src="./src/img/1.jpg" width="100%" alt="">
-                    </div>
-                    <div class="visualization-image"> <img id="iamPic-3" src="./src/img/2.jpg" width="100%" alt="">
-                    </div>
-                    <div class="visualization-image"> <img id="iamPic-4" src="./src/img/3.jpg" width="100%" alt="">
-                    </div>
-                    <div class="visualization-image"> <img id="iamPic-5" src="./src/img/4.jpg" width="100%" alt="">
-                    </div>
-                </div>
+        </section>
 
 
-
-
-            </div>
-        </div>
-
-
-
-        <div class="works  d-flex justify-content-center align-items-center  hiddenContent">
-            <h1 class="title h1">Мои Работы</h1>
-        </div>
-
-
-
-        <div class="services  d-flex justify-content-between align-items-start gap-4 hiddenContent">
-            <h1 class="h1">Мои услуги</h1>
-        </div>
-
-
-
-        <div class="contacts  d-flex justify-content-between align-items-start gap-4 hiddenContent">
-            <h1 class="h1">Мои контакты</h1>
-        </div>
 
     </main>
 
 
 
-    <footer class="footer">
-
-
-
+    <footer class="footer container-fluid d-flex justify-content-center align-items-center align-items-center ">
+        <h4 class="ui-p-3">&copy; Александр Б.А 2024</h4>
     </footer>
 
 
@@ -491,11 +809,11 @@
         integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-   
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
     <script src="./src/js/index.js"></script>
 
 </body>
