@@ -797,48 +797,16 @@
 
 
 <!--       test form -->
-        <section class="form">
+      <form action="https://api.web3forms.com/submit" method="POST">
 
-  <div class="container">
-  <form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
-  <h2 class="g-form__title g-form__title_main">Оставьте заявку прямо сейчас и получите скидку 10%</h2>
-  <h2 class="g-form__title g-form__title_respond"></h2>
-  <div class="g-form__preloader"></div>
-  <div class="g-form__inputs">
-    <fieldset class="g-form__input-wrapper">
-      <input class="g-form__input g-form__input_name" id="name" name="Имя" placeholder="Введите ваше имя" required>
-    </fieldset>
- 
-    <fieldset class="g-form__input-wrapper">
-      <input class="g-form__input g-form__input_tel" id="tel" name="Телефон" placeholder="Введите ваш телефон">
-    </fieldset>
- 
-    <fieldset class="g-form__input-wrapper">
-      <input id="email" name="Email" type="email" value=""
-      required placeholder="Введите ваш email"/>
-    </fieldset>
- 
-    <fieldset class="g-form__input-wrapper">
-      <input id="arbitrary-field" name="Произвольное поле" placeholder="Произвольное поле для теста">
-    </fieldset>
- 
-    <fieldset class="g-form__input-wrapper">
-      <textarea id="message" name="Сообщение" rows="10"
-      placeholder="Введите сообщение"></textarea>
-    </fieldset>
- 
-    <fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
-      <label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
-      <input id="honeypot" type="text" name="honeypot" value="">
-    </fieldset>
- 
-    <div class="g-form__button-wrapper">
-      <button type="submit" class="g-form__button">Получить скидку</button>
-    </div>
-  </div>
+    <input type="hidden" name="access_key" value="223007ee-27c7-40d2-88d6-1cb80a8ee4a8">
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <button type="submit">Submit Form</button>
+
 </form>
-  </div>
-</section>
 
     </main>
 
